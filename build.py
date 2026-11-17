@@ -67,6 +67,10 @@ f'''<section class="hero wrap"><div>
 <article class="work-card"><span class="work-number">04</span><h3>Evaluación de resultados</h3><p>Utilizo registros e informes para documentar avances y apoyar la continuidad de la atención.</p></article>
 </div>
 <div class="evalkine-feature"><div><p class="eyebrow">DESARROLLO PROPIO</p><h3>EvalKine: tecnología aplicada a la rehabilitación</h3><p>Desarrollé EvalKine, una plataforma que utilizo para apoyar la evaluación kinésica, registrar la evolución de los pacientes, realizar seguimiento y generar informes clínicos. Su propósito es organizar la información y facilitar la revisión del proceso terapéutico.</p><a class="text-link" href="/evalkine/">Conocer EvalKine →</a></div><div class="evalkine-mark" aria-hidden="true"><span>EK</span><small>EvalKine</small></div></div>
+<div class="evalkine-detail"><p class="eyebrow">PROYECTOS PROFESIONALES</p><h3>Iniciativas desarrolladas desde StimKine</h3><div class="evalkine-capabilities">
+<div><h3>StimKine Movimiento y Salud</h3><p>Empresa dedicada a la prestación y desarrollo de servicios de kinesiología y rehabilitación, con atención domiciliaria y en consulta.</p><a class="text-link" href="https://stimkine.github.io/" target="_blank" rel="noopener noreferrer">Visitar sitio de StimKine →</a></div>
+<div><h3>StimKine ELEAM</h3><p>Servicio de kinesiología para establecimientos de larga estadía, con evaluación y plan individual por residente, atención coordinada, seguimiento mediante EvalKine y reportes para la gestión institucional.</p><a class="text-link" href="https://stimkine.github.io/eleam.html" target="_blank" rel="noopener noreferrer">Conocer StimKine ELEAM →</a></div>
+</div></div>
 </div></section>
 
 <section class="wrap two"><div><h2>Experiencia clínica diversa</h2>
