@@ -9,7 +9,7 @@ os.makedirs(OUT+"/articulos",exist_ok=True)
 NAV=[("/","Inicio"),("/sobre-mi/","Sobre mí"),("/experiencia-profesional/","Experiencia"),("/areas-de-rehabilitacion/","Áreas"),("/atencion-en-consulta-y-domicilio/","Consulta y domicilio"),("/mi-enfoque-clinico/","Enfoque clínico"),("/articulos/","Artículos"),("/contacto/","Contacto")]
 
 def fix(h):
-    return h.replace('href="/','href="'+PREFIX+'/')
+    return h.replace('href="/','href="'+PREFIX+'/').replace('src="/','src="'+PREFIX+'/')
 
 def page(path,title,desc,body,schema="",og="website"):
     url=BASE+path
@@ -117,8 +117,14 @@ areas=[("Rehabilitación musculoesquelética","musculoesqueletica",["Dolor lumba
 ("Rehabilitación geriátrica","geriatrica",["Prevención de caídas","Alteraciones del equilibrio","Entrenamiento de marcha","Pérdida de fuerza","Deterioro de movilidad","Recuperación y mantención de autonomía"],"El objetivo es que la persona mayor conserve su independencia y se sienta segura en su vida diaria.","<a href=\"/articulos/como-prevenir-caidas-en-personas-mayores/\">Prevención de caídas</a> · <a href=\"/articulos/fuerza-y-movilidad-en-personas-mayores/\">Fuerza y movilidad</a>"),
 ("Rehabilitación funcional","funcional",["Entrenamiento terapéutico","Fuerza y resistencia","Movilidad y coordinación","Recuperación de capacidades físicas","Retorno progresivo a actividades cotidianas"],"Programas progresivos para volver a hacer lo que cada persona necesita o quiere hacer.","")]
 b='<div class="wrap prose"><h1>Áreas de rehabilitación</h1><p>Atiendo a adolescentes, adultos y personas mayores. Las técnicas y el ejercicio se eligen según la evaluación y las necesidades de cada paciente.</p>'
+IMG={"musculoesqueletica":("lumbar-electroterapia",1000,1000,"Paciente en camilla durante una sesión de rehabilitación lumbar con electroterapia"),
+"traumatologica-postoperatoria":("escalon-barra-postoperatoria",1000,1000,"Paciente realizando ejercicio de subir un escalón con apoyo en una barra, en la consulta"),
+"geriatrica":("marcha-andador",1000,782,"Persona mayor realizando entrenamiento de marcha con andador"),
+"funcional":("plancha-funcional",1000,1000,"Paciente realizando un ejercicio de estabilidad de tronco sobre una colchoneta")}
+def fig(k):
+    f,w,h,a=IMG[k]; return f'<figure class="photo"><img src="/img/{f}.jpg" width="{w}" height="{h}" loading="lazy" alt="{a}"></figure>'
 for n,sid,l,t,links in areas:
-    b+=f'<section id="{sid}"><h2>{n}</h2><p>{t}</p><ul>'+"".join(f"<li>{x}</li>" for x in l)+"</ul>"+(f'<p>Para leer: {links}</p>' if links else "")+"</section>"
+    b+=f'<section id="{sid}"><h2>{n}</h2><p>{t}</p>'+fig(sid)+'<ul>'+"".join(f"<li>{x}</li>" for x in l)+"</ul>"+(f'<p>Para leer: {links}</p>' if links else "")+"</section>"
 b+=CTA+"</div>"
 page("/areas-de-rehabilitacion/","Áreas de rehabilitación | Kinesiólogo Guillermo Díaz",
 "Rehabilitación musculoesquelética, traumatológica y postoperatoria, geriátrica y funcional: dolor lumbar, rodilla, fracturas, caídas. Santiago Sur.",b)
@@ -127,7 +133,7 @@ page("/areas-de-rehabilitacion/","Áreas de rehabilitación | Kinesiólogo Guill
 page("/atencion-en-consulta-y-domicilio/","Kinesiólogo a domicilio y en consulta | San Ramón, San Miguel, La Cisterna",
 "Kinesiólogo a domicilio en San Ramón, San Miguel y La Cisterna, y atención en consulta. Kinesiología a domicilio en Santiago Sur.",
 f'''<div class="wrap prose"><h1>Atención en consulta y a domicilio</h1>
-<h2>Atención en consulta</h2><p>Un espacio equipado para la evaluación y la rehabilitación: trabajo de movilidad, fuerza, equilibrio y reeducación funcional.</p>
+<h2>Atención en consulta</h2><figure class="photo"><img src="/img/consulta-equipada.jpg" width="1000" height="1000" loading="lazy" alt="Sala de consulta con camilla, barra de apoyo, escalón y láminas anatómicas"></figure><p>Un espacio equipado para la evaluación y la rehabilitación: trabajo de movilidad, fuerza, equilibrio y reeducación funcional.</p>
 <h2>Kinesiología a domicilio</h2><p>Visitas a tu casa para personas que necesitan rehabilitarse en su entorno habitual o que tienen dificultades para trasladarse, por ejemplo después de una cirugía o en personas mayores. Permite además trabajar sobre las condiciones reales del hogar.</p>
 <h2>Cobertura inicial en Santiago Sur</h2>
 <h3>San Ramón</h3><p>Kinesiólogo en San Ramón, en consulta y a domicilio.</p>
