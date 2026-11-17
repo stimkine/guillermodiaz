@@ -58,8 +58,16 @@ f'''<section class="hero wrap"><div>
 <p class="sub">Consulta y kinesiología a domicilio en San Ramón, San Miguel y La Cisterna.</p></div>
 <figure class="portrait"><img src="{PREFIX}/img/guillermo-diaz-retrato.webp" alt="Guillermo Díaz Viveros, kinesiólogo y licenciado en Kinesiología, en su consulta" width="640" height="850" fetchpriority="high"></figure></section>
 
-<section class="band"><div class="wrap"><h2>Una atención basada en el criterio clínico</h2>
-<p class="wide">No aplico máquinas ni técnicas de forma automática. Evalúo tu función, identifico qué te limita, defino objetivos contigo y diseño un plan para ti. Después reevalúo y registro tus avances. <a href="/mi-enfoque-clinico/">Ver cómo trabajo</a>.</p></div></section>
+<section class="band"><div class="wrap"><h2>Cómo trabajo: evaluación, tratamiento y seguimiento</h2>
+<p class="wide">Cada proceso comienza por comprender a la persona, su condición y sus objetivos. Integro evaluación clínica y funcional, planificación terapéutica individualizada, intervención y reevaluación para orientar las decisiones durante la rehabilitación.</p>
+<div class="work-grid">
+<article class="work-card"><span class="work-number">01</span><h3>Evaluación clínica y funcional</h3><p>Identifico necesidades, capacidades y limitaciones para establecer un punto de partida.</p></article>
+<article class="work-card"><span class="work-number">02</span><h3>Planificación terapéutica</h3><p>Defino objetivos y estrategias de intervención acordes a cada persona y su contexto.</p></article>
+<article class="work-card"><span class="work-number">03</span><h3>Intervención y seguimiento</h3><p>Registro la evolución, reviso la respuesta al tratamiento y ajusto el plan cuando corresponde.</p></article>
+<article class="work-card"><span class="work-number">04</span><h3>Evaluación de resultados</h3><p>Utilizo registros e informes para documentar avances y apoyar la continuidad de la atención.</p></article>
+</div>
+<div class="evalkine-feature"><div><p class="eyebrow">DESARROLLO PROPIO</p><h3>EvalKine: tecnología aplicada a la rehabilitación</h3><p>Desarrollé EvalKine, una plataforma que utilizo para apoyar la evaluación kinésica, registrar la evolución de los pacientes, realizar seguimiento y generar informes clínicos. Su propósito es organizar la información y facilitar la revisión del proceso terapéutico.</p><a class="text-link" href="/mi-enfoque-clinico/">Conocer mi metodología y EvalKine →</a></div><div class="evalkine-mark" aria-hidden="true"><span>EK</span><small>EvalKine</small></div></div>
+</div></section>
 
 <section class="wrap two"><div><h2>Experiencia clínica diversa</h2>
 <p>Clínica Indisa (UPC, unidad coronaria, unidad médico-quirúrgica y traumatología), centros de rehabilitación, ELEAM y la dirección clínica de StimKine.</p>
@@ -134,8 +142,15 @@ steps=["Evaluación clínica y funcional","Identificación de problemas y limita
 page("/mi-enfoque-clinico/","Mi enfoque clínico | Guillermo Díaz, Kinesiólogo",
 "Cómo trabajo: evaluación clínica y funcional, objetivos, plan individualizado, seguimiento y registro de resultados con EvalKine.",
 '<div class="wrap prose"><h1>Mi enfoque clínico</h1><p>La rehabilitación no consiste en aplicar máquinas o técnicas de manera automática, sino en comprender el problema y trabajar para recuperar la funcionalidad y la calidad de vida.</p><h2>Cómo es una atención</h2><ol class="steps">'+"".join(f"<li>{s}</li>" for s in steps)+'''</ol>
-<h2>Registro de avances con EvalKine</h2>
-<p>EvalKine es una herramienta de evaluación y seguimiento clínico que desarrollé para organizar evaluaciones, registrar avances y comparar resultados en el tiempo. Es una herramienta de apoyo a mi trabajo; no es un producto médico certificado.</p>'''+CTA+"</div>")
+<section class="evalkine-detail"><p class="eyebrow">INNOVACIÓN Y DESARROLLO PROFESIONAL</p><h2>EvalKine: una herramienta propia para el trabajo kinésico</h2>
+<p>EvalKine es una plataforma que desarrollé para apoyar distintas etapas del proceso de atención. Integra información de evaluación, registro clínico y seguimiento, permitiendo documentar la evolución de cada paciente y generar informes clínicos.</p>
+<div class="evalkine-capabilities">
+<div><h3>Evaluación</h3><p>Organización y registro de antecedentes y resultados de la evaluación kinésica.</p></div>
+<div><h3>Evolución del paciente</h3><p>Registro de las atenciones y de los cambios observados durante el proceso de rehabilitación.</p></div>
+<div><h3>Seguimiento</h3><p>Consulta de registros para revisar el progreso y dar continuidad al proceso terapéutico.</p></div>
+<div><h3>Informes clínicos</h3><p>Generación de informes que permiten comunicar y documentar la información del proceso de atención.</p></div>
+</div>
+<p>EvalKine forma parte de mi interés por integrar tecnología, organización de información y criterio clínico. Es una herramienta de apoyo al trabajo profesional: las decisiones de evaluación y tratamiento continúan dependiendo del análisis del kinesiólogo y de las necesidades de cada paciente.</p></section>'''+CTA+"</div>")
 
 # ARTICULOS
 arts=[
