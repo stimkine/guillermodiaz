@@ -1,8 +1,8 @@
 import os, textwrap
 BASE="https://stimkine.github.io/guillermodiaz"   # con dominio propio: "https://tudominio.cl"
 PREFIX="/guillermodiaz"                             # con dominio propio: ""
-WA="56900000000"                      # reemplazar: 56 + número sin +
-EMAIL="contacto@DOMINIO_AQUI"
+WA="56989331095"                      # reemplazar: 56 + número sin +
+EMAIL="stimkine@gmail.com"
 OUT="docs"
 os.makedirs(OUT+"/articulos",exist_ok=True)
 
@@ -29,12 +29,12 @@ def page(path,title,desc,body,schema="",og="website"):
 </head><body>
 <a class="skip" href="#main">Ir al contenido</a>
 <header class="top"><div class="wrap bar">
-<a class="brand" href="/">Guillermo Díaz<small>Kinesiólogo</small></a>
+<a class="brand" href="/">Guillermo Díaz<small>Kinesiólogo y Licenciado en Kinesiología</small></a>
 <input type="checkbox" id="mt" class="mt"><label for="mt" class="mb">Menú</label>
 <nav aria-label="Principal">{nav}</nav></div></header>
 <main id="main">{body}</main>
 <footer><div class="wrap fgrid">
-<div><strong>Guillermo Díaz Viveros</strong><br>Kinesiólogo y Licenciado en Kinesiología (UDLA)<br>Director Clínico en StimKine Movimiento y Salud SpA<br>Consulta y domicilio en San Ramón, San Miguel y La Cisterna · Santiago Sur</div>
+<div><strong>Guillermo Díaz Viveros</strong><br>Kinesiólogo y Licenciado en Kinesiología (UDLA)<br>Fundador y Director Clínico de StimKine Movimiento y Salud SpA<br><a href="https://stimkine.github.io/">StimKine Movimiento y Salud</a> · <a href="https://www.instagram.com/StimKine_movimientoysalud/">Instagram</a><br>Consulta y domicilio en San Ramón, San Miguel y La Cisterna · Santiago Sur</div>
 <div><a href="/experiencia-profesional/">Experiencia profesional</a><br><a href="/areas-de-rehabilitacion/">Áreas de rehabilitación</a><br><a href="/articulos/">Artículos</a><br><a href="/contacto/">Contacto</a></div>
 <p class="fine">La información de este sitio es educativa y no reemplaza una evaluación clínica presencial. No se realizan diagnósticos a distancia.</p>
 </div></footer>
@@ -49,7 +49,7 @@ CTA='<p><a class="btn" href="https://wa.me/'+WA+'?text=Hola%20Guillermo%2C%20qui
 schema_home=f'''<script type="application/ld+json">{{
 "@context":"https://schema.org","@graph":[
 {{"@type":"Person","@id":"{BASE}/#guillermo","name":"Guillermo Díaz Viveros","alternateName":"Guillermo Díaz","jobTitle":"Kinesiólogo","url":"{BASE}/","alumniOf":{{"@type":"CollegeOrUniversity","name":"Universidad de Las Américas"}},"worksFor":{{"@type":"Organization","name":"StimKine Movimiento y Salud SpA"}}}},
-{{"@type":"Physiotherapy","@id":"{BASE}/#consulta","name":"Guillermo Díaz, Kinesiólogo","url":"{BASE}/","employee":{{"@id":"{BASE}/#guillermo"}},
+{{"@type":"Person","@id":"{BASE}/#consulta","name":"Guillermo Díaz Viveros","url":"{BASE}/","employee":{{"@id":"{BASE}/#guillermo"}},
 "areaServed":[{{"@type":"AdministrativeArea","name":"San Ramón"}},{{"@type":"AdministrativeArea","name":"San Miguel"}},{{"@type":"AdministrativeArea","name":"La Cisterna"}}],
 "telephone":"+{WA}"}}]}}</script>'''
 
@@ -95,20 +95,12 @@ f'''<div class="wrap prose"><h1>Sobre mí</h1>
 {CTA}</div>''')
 
 # EXPERIENCIA
-page("/experiencia-profesional/","Experiencia profesional | Guillermo Díaz, Kinesiólogo",
-"Trayectoria de Guillermo Díaz: Clínica Indisa (UPC, unidad coronaria, traumatología), CCR El Bosque, ELEAM y dirección clínica en StimKine.",
-f'''<div class="wrap prose"><h1>Experiencia profesional</h1>
-<p>Una trayectoria clínica en distintos niveles de complejidad y con diferentes grupos de edad.</p>
-<h2>StimKine Movimiento y Salud SpA</h2>
-<p>Director Clínico y kinesiólogo. Dirección clínica y atención directa de pacientes, en consulta y a domicilio.</p>
-<h2>Clínica Indisa</h2>
-<ul><li>Unidad de paciente crítico (UPC)</li><li>Unidad coronaria</li><li>Unidad médico-quirúrgica</li><li>Traumatología</li></ul>
-<h2>Centros de rehabilitación</h2>
-<p>CCR El Bosque.</p>
-<h2>Establecimientos de larga estadía para adultos mayores (ELEAM)</h2>
-<p>Senior Suites y Fundación Las Rosas. Allí trabajé la movilidad, la prevención de caídas y la conservación de la autonomía de personas mayores.</p>
-<h2>Qué significa para tu atención</h2>
-<p>Haber trabajado con pacientes de distinta complejidad me permite reconocer qué necesita cada persona, cuándo progresar el ejercicio y cuándo derivar o coordinar con otros profesionales. La experiencia con personas mayores es una fortaleza, pero atiendo también a adolescentes y adultos: ver <a href="/areas-de-rehabilitacion/">áreas de rehabilitación</a>.</p>
+page("/experiencia-profesional/","Áreas de experiencia clínica | Guillermo Díaz Viveros, Kinesiólogo",
+"Áreas de experiencia clínica de Guillermo Díaz Viveros: atención en unidades de paciente crítico, cardiovascular, traumatológica, musculoesquelética y geriátrica.",
+f'''<div class="wrap prose"><h1>Áreas de experiencia clínica</h1>
+<p>Experiencia en distintos contextos de atención y rehabilitación, con adolescentes, adultos y personas mayores.</p>
+<ul><li>Atención y rehabilitación en unidades de paciente crítico (UPC).</li><li>Área cardiovascular y unidad coronaria.</li><li>Rehabilitación traumatológica y musculoesquelética.</li><li>Rehabilitación geriátrica y funcional.</li><li>Evaluación y recuperación de la movilidad.</li><li>Atención y rehabilitación de personas mayores en contextos institucionales y domiciliarios.</li></ul>
+<p>Actualmente soy fundador y Director Clínico de StimKine Movimiento y Salud SpA, donde participo en la evaluación y atención de pacientes en consulta y a domicilio.</p>
 {CTA}</div>''')
 
 # AREAS
