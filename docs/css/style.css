@@ -130,3 +130,38 @@ footer{border-top:1px solid var(--line);background:var(--cream);margin-top:3rem;
   .bar>nav a{width:100%;justify-content:flex-start;min-height:46px;padding:.7rem 1rem;border-radius:12px}
 }
 @media(prefers-reduced-motion:reduce){.bar>nav a{transition:none}}
+
+
+/* Corrección definitiva del menú principal: el botón completo responde al puntero */
+header.top .wrap.bar > nav[aria-label="Principal"]{
+ display:flex!important;flex-wrap:wrap;align-items:center;justify-content:center;gap:.45rem;
+}
+header.top .wrap.bar > nav[aria-label="Principal"] a,
+header.top .wrap.bar > nav[aria-label="Principal"] a:link,
+header.top .wrap.bar > nav[aria-label="Principal"] a:visited{
+ box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ min-height:44px!important;margin:0!important;padding:.65rem .95rem!important;
+ border:1px solid transparent!important;border-bottom:1px solid transparent!important;
+ border-radius:999px!important;background:transparent!important;
+ color:var(--petrol-d)!important;text-decoration:none!important;line-height:1.2!important;
+ cursor:pointer!important;transition:background-color .18s ease,color .18s ease,border-color .18s ease!important;
+}
+header.top .wrap.bar > nav[aria-label="Principal"] a:hover,
+header.top .wrap.bar > nav[aria-label="Principal"] a:focus,
+header.top .wrap.bar > nav[aria-label="Principal"] a:focus-visible{
+ background:var(--petrol)!important;border-color:var(--petrol)!important;color:#fff!important;
+ text-decoration:none!important;outline-offset:3px;
+}
+header.top .wrap.bar > nav[aria-label="Principal"] a[aria-current="page"]{
+ background:var(--petrol-d)!important;border-color:var(--petrol-d)!important;color:#fff!important;
+ box-shadow:0 2px 8px rgba(23,66,75,.18);
+}
+header.top .wrap.bar > nav[aria-label="Principal"] a[aria-current="page"]:hover{
+ background:var(--petrol)!important;border-color:var(--petrol)!important;
+}
+header.top .wrap.bar > nav[aria-label="Principal"] a::after{content:none!important;display:none!important}
+@media(max-width:980px){
+ header.top .wrap.bar > nav[aria-label="Principal"]{display:none!important;flex-direction:column;align-items:stretch}
+ header.top .wrap.bar > input.mt:checked ~ nav[aria-label="Principal"]{display:flex!important}
+ header.top .wrap.bar > nav[aria-label="Principal"] a{width:100%!important;justify-content:flex-start!important;border-radius:12px!important}
+}
