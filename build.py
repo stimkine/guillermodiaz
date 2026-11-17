@@ -24,7 +24,7 @@ def page(path,title,desc,body,schema="",og="website"):
 <meta property="og:description" content="{desc}"><meta property="og:url" content="{url}">
 <meta property="og:locale" content="es_CL"><meta property="og:image" content="{BASE}/img/og.jpg">
 <meta name="theme-color" content="#fbfaf6">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=nav-20261117">
 {schema}
 </head><body>
 <a class="skip" href="#main">Ir al contenido</a>
