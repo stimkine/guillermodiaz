@@ -34,7 +34,7 @@ def page(path,title,desc,body,schema="",og="website"):
 <nav aria-label="Principal">{nav}</nav></div></header>
 <main id="main">{body}</main>
 <footer><div class="wrap fgrid">
-<div><strong>Guillermo Díaz Viveros</strong><br>Kinesiólogo y Licenciado en Kinesiología (UDLA)<br>Fundador y Director Clínico de StimKine Movimiento y Salud SpA<br><a href="https://stimkine.github.io/">StimKine Movimiento y Salud</a> · <a href="https://www.instagram.com/StimKine_movimientoysalud/">Instagram</a><br>Consulta y domicilio en San Ramón, San Miguel y La Cisterna · Santiago Sur</div>
+<div><strong>Guillermo Díaz Viveros</strong><br>Kinesiólogo y Licenciado en Kinesiología (UDLA)<br>Fundador y Director Clínico de StimKine Movimiento y Salud SpA<br><a href="https://stimkine.github.io/">StimKine Movimiento y Salud</a> · <a href="https://www.instagram.com/StimKine_movimientoysalud/">Instagram</a> · <a href="https://cl.linkedin.com/in/guillermo-diaz-viveros-901a2b8b" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>Consulta y domicilio en San Ramón, San Miguel y La Cisterna · Santiago Sur</div>
 <div><a href="/experiencia-profesional/">Experiencia profesional</a><br><a href="/areas-de-rehabilitacion/">Áreas de rehabilitación</a><br><a href="/articulos/">Artículos</a><br><a href="/contacto/">Contacto</a></div>
 <p class="fine">La información de este sitio es educativa y no reemplaza una evaluación clínica presencial. No se realizan diagnósticos a distancia.</p>
 </div></footer>
@@ -52,11 +52,11 @@ schema_home='<script type="application/ld+json">{"@context":"https://schema.org"
 page("/","Guillermo Díaz | Kinesiólogo en San Ramón y Santiago Sur",
 "Guillermo Díaz, kinesiólogo: rehabilitación para adolescentes, adultos y personas mayores, en consulta y a domicilio en San Ramón, San Miguel y La Cisterna.",
 f'''<section class="hero wrap"><div>
-<h1>Guillermo Díaz | Kinesiólogo en San Ramón y Santiago Sur</h1>
+<h1>Guillermo Díaz Viveros</h1><p class="sub">Kinesiólogo y Licenciado en Kinesiología · Fundador y Director Clínico de StimKine Movimiento y Salud SpA</p><h2>Kinesiología en San Ramón y Santiago Sur</h2>
 <p class="lead">Atención kinesiológica integral para adolescentes, adultos y personas mayores. Evaluación individualizada y rehabilitación orientada a recuperar el movimiento, la funcionalidad y la calidad de vida.</p>
 {CTA}
 <p class="sub">Consulta y kinesiología a domicilio en San Ramón, San Miguel y La Cisterna.</p></div>
-<figure class="ph" role="img" aria-label="Fotografía de Guillermo Díaz"><span>Fotografía profesional de Guillermo<br>(img/guillermo-portada.jpg)</span></figure></section>
+<figure class="portrait"><img src="{PREFIX}/img/guillermo-diaz-retrato.webp" alt="Guillermo Díaz Viveros, kinesiólogo y licenciado en Kinesiología, en su consulta" width="640" height="850" fetchpriority="high"></figure></section>
 
 <section class="band"><div class="wrap"><h2>Una atención basada en el criterio clínico</h2>
 <p class="wide">No aplico máquinas ni técnicas de forma automática. Evalúo tu función, identifico qué te limita, defino objetivos contigo y diseño un plan para ti. Después reevalúo y registro tus avances. <a href="/mi-enfoque-clinico/">Ver cómo trabajo</a>.</p></div></section>
