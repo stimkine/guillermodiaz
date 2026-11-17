@@ -35,7 +35,7 @@ def page(path,title,desc,body,schema="",og="website"):
 <main id="main">{body}</main>
 <footer><div class="wrap fgrid">
 <div><strong>Guillermo Díaz Viveros</strong><br>Kinesiólogo y Licenciado en Kinesiología (UDLA)<br>Fundador y Director Clínico de StimKine Movimiento y Salud SpA<br><a href="https://stimkine.github.io/">StimKine Movimiento y Salud</a> · <a href="https://www.instagram.com/StimKine_movimientoysalud/">Instagram</a> · <a href="https://cl.linkedin.com/in/guillermo-diaz-viveros-901a2b8b" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>Consulta y domicilio en San Ramón, San Miguel y La Cisterna · Santiago Sur</div>
-<div><a href="/experiencia-profesional/">Experiencia profesional</a><br><a href="/areas-de-rehabilitacion/">Áreas de rehabilitación</a><br><a href="/articulos/">Artículos</a><br><a href="/contacto/">Contacto</a></div>
+<div><a href="/evalkine/">EvalKine</a><br><a href="/experiencia-profesional/">Experiencia profesional</a><br><a href="/areas-de-rehabilitacion/">Áreas de rehabilitación</a><br><a href="/articulos/">Artículos</a><br><a href="/contacto/">Contacto</a></div>
 <p class="fine">La información de este sitio es educativa y no reemplaza una evaluación clínica presencial. No se realizan diagnósticos a distancia.</p>
 </div></footer>
 <a class="wa" href="https://wa.me/{WA}?text=Hola%20Guillermo%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n." rel="noopener">Solicitar evaluación por WhatsApp</a>
