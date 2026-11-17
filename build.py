@@ -46,12 +46,7 @@ def page(path,title,desc,body,schema="",og="website"):
 
 CTA='<p><a class="btn" href="https://wa.me/'+WA+'?text=Hola%20Guillermo%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n.">Solicitar evaluación por WhatsApp</a></p>'
 
-schema_home=f'''<script type="application/ld+json">{{
-"@context":"https://schema.org","@graph":[
-{{"@type":"Person","@id":"{BASE}/#guillermo","name":"Guillermo Díaz Viveros","alternateName":"Guillermo Díaz","jobTitle":"Kinesiólogo","url":"{BASE}/","alumniOf":{{"@type":"CollegeOrUniversity","name":"Universidad de Las Américas"}},"worksFor":{{"@type":"Organization","name":"StimKine Movimiento y Salud SpA"}}}},
-{{"@type":"Person","@id":"{BASE}/#consulta","name":"Guillermo Díaz Viveros","url":"{BASE}/","employee":{{"@id":"{BASE}/#guillermo"}},
-"areaServed":[{{"@type":"AdministrativeArea","name":"San Ramón"}},{{"@type":"AdministrativeArea","name":"San Miguel"}},{{"@type":"AdministrativeArea","name":"La Cisterna"}}],
-"telephone":"+{WA}"}}]}}</script>'''
+schema_home='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Guillermo Díaz Viveros","jobTitle":"Kinesiólogo y Licenciado en Kinesiología","url":"https://stimkine.github.io/guillermodiaz/","email":"mailto:stimkine@gmail.com","telephone":"+56989331095","worksFor":{"@type":"Organization","name":"StimKine Movimiento y Salud SpA","url":"https://stimkine.github.io/"},"sameAs":["https://www.instagram.com/StimKine_movimientoysalud/"]}</script>'
 
 # INICIO
 page("/","Guillermo Díaz | Kinesiólogo en San Ramón y Santiago Sur",
