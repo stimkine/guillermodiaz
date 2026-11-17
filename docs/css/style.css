@@ -57,3 +57,28 @@ footer{border-top:1px solid var(--line);background:var(--cream);margin-top:3rem;
 .evalkine-capabilities h3{margin:.1rem 0 .35rem}
 @media(max-width:900px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.work-grid,.evalkine-capabilities{grid-template-columns:1fr}.evalkine-feature{grid-template-columns:1fr}.evalkine-mark{width:88px;height:88px;grid-row:1}}
+
+
+/* Página propia de EvalKine */
+.evalkine-page{max-width:70rem}
+.evalkine-hero{padding:clamp(1.5rem,4vw,3rem);background:var(--cream);border:1px solid var(--line);border-radius:12px;margin:1rem 0 2rem}
+.evalkine-hero h1{font-size:clamp(2.5rem,7vw,4.4rem);margin:.1em 0}
+.evalkine-hero .lead{max-width:48rem}
+.evalkine-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.evalkine-tags span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.85rem;color:var(--petrol-d)}
+.evalkine-screenshot{margin:1.5rem 0 2.5rem}
+.screenshot-placeholder{min-height:230px;border:1.5px dashed var(--sage);border-radius:12px;background:linear-gradient(145deg,#f6f3e9,#e8eee7);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;color:var(--petrol-d)}
+.screenshot-placeholder p{max-width:38rem;color:var(--mute);margin:.4rem 0}
+.placeholder-icon{width:58px;height:58px;border-radius:15px;background:var(--petrol);color:#fff;display:grid;place-items:center;font:600 1.45rem Georgia,serif;margin-bottom:.7rem}
+.evalkine-modules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.3rem 0}
+.evalkine-module{padding:1.25rem;background:#fff;border:1px solid var(--line);border-radius:9px}
+.evalkine-module>span{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--sage-d)}
+.evalkine-module h3{margin:.35rem 0}
+.evalkine-module p,.evalkine-module li{font-size:.94rem;color:var(--mute)}
+.evalkine-module ul{columns:2;padding-left:1.2rem;margin:.7rem 0 0}
+.evalkine-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;margin:1rem 0}
+.evalkine-flow>div{padding:1rem;border-radius:8px;background:var(--cream);border-top:3px solid var(--sage)}
+.evalkine-flow p{font-size:.9rem;color:var(--mute);margin:.35rem 0 0}
+.evalkine-note{padding:1.5rem;background:#edf2ed;border-radius:10px;margin:2rem 0}
+.evalkine-note h2{margin-top:0}
+@media(max-width:720px){.evalkine-modules,.evalkine-flow{grid-template-columns:1fr}.evalkine-module ul{columns:1}}
