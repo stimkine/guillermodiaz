@@ -82,3 +82,15 @@ footer{border-top:1px solid var(--line);background:var(--cream);margin-top:3rem;
 .evalkine-note{padding:1.5rem;background:#edf2ed;border-radius:10px;margin:2rem 0}
 .evalkine-note h2{margin-top:0}
 @media(max-width:720px){.evalkine-modules,.evalkine-flow{grid-template-columns:1fr}.evalkine-module ul{columns:1}}
+
+/* Navegación interna y páginas de áreas */
+.area-tabs{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0 2rem;padding:.9rem;background:var(--cream);border:1px solid var(--line);border-radius:10px}
+.area-tabs a{display:inline-flex;align-items:center;padding:.55rem .85rem;border:1px solid var(--sage);border-radius:999px;background:#fff;color:var(--petrol-d);font-size:.92rem;font-weight:600;text-decoration:none}
+.area-tabs a:hover,.area-tabs a:focus-visible{background:var(--petrol);color:#fff}
+.area-detail{max-width:54rem}
+.area-detail .lead{max-width:48rem}
+.breadcrumbs{font-size:.86rem;color:var(--mute)}
+.breadcrumbs a{color:var(--petrol)}
+.area-next{padding:1.3rem;background:var(--cream);border-radius:10px;margin:2rem 0}
+.area-next h2{margin-top:0}
+@media(max-width:600px){.area-tabs{gap:.45rem}.area-tabs a{font-size:.86rem;padding:.48rem .7rem}}
