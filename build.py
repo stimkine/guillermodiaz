@@ -98,12 +98,17 @@ f'''<div class="wrap prose"><h1>Sobre mí</h1>
 {CTA}</div>''')
 
 # EXPERIENCIA
-page("/experiencia-profesional/","Áreas de experiencia clínica | Guillermo Díaz Viveros, Kinesiólogo",
-"Áreas de experiencia clínica de Guillermo Díaz Viveros: atención en unidades de paciente crítico, cardiovascular, traumatológica, musculoesquelética y geriátrica.",
-f'''<div class="wrap prose"><h1>Áreas de experiencia clínica</h1>
-<p>Experiencia en distintos contextos de atención y rehabilitación, con adolescentes, adultos y personas mayores.</p>
-<ul><li>Atención y rehabilitación en unidades de paciente crítico (UPC).</li><li>Área cardiovascular y unidad coronaria.</li><li>Rehabilitación traumatológica y musculoesquelética.</li><li>Rehabilitación geriátrica y funcional.</li><li>Evaluación y recuperación de la movilidad.</li><li>Atención y rehabilitación de personas mayores en contextos institucionales y domiciliarios.</li></ul>
-<p>Actualmente soy fundador y Director Clínico de StimKine Movimiento y Salud SpA, donde participo en la evaluación y atención de pacientes en consulta y a domicilio.</p>
+page("/experiencia-profesional/","Experiencia clínica | Guillermo Díaz Viveros, Kinesiólogo",
+"Experiencia de Guillermo Díaz Viveros en atención hospitalaria, unidades de paciente crítico, área cardiovascular, rehabilitación traumatológica, musculoesquelética y geriátrica.",
+f'''<div class="wrap prose"><h1>Experiencia clínica</h1>
+<p>Mi experiencia profesional se ha desarrollado en distintos contextos de atención, con énfasis en la evaluación, recuperación funcional y rehabilitación de adolescentes, adultos y personas mayores.</p>
+<nav class="area-tabs" aria-label="Áreas de experiencia"><a href="#critico">Atención hospitalaria y UPC</a><a href="#cardiovascular">Cardiovascular</a><a href="#trauma">Traumatología y musculoesquelética</a><a href="#geriatria">Geriatría y funcionalidad</a><a href="#institucional">Atención institucional y domiciliaria</a></nav>
+<section id="critico"><h2>Atención hospitalaria y unidades de paciente crítico</h2><p>Experiencia en contextos hospitalarios de mayor complejidad, incluyendo unidades de paciente crítico (UPC), atención de personas mayores hospitalizadas y unidades médico-quirúrgicas. Este trabajo requiere evaluación continua, adaptación a la condición clínica y coordinación con otros profesionales de salud.</p></section>
+<section id="cardiovascular"><h2>Área cardiovascular</h2><p>Experiencia en contextos de atención cardiovascular y unidad coronaria, con atención orientada a la condición funcional de la persona y a las necesidades propias del entorno hospitalario.</p></section>
+<section id="trauma"><h2>Traumatología y rehabilitación musculoesquelética</h2><p>Experiencia en evaluación y rehabilitación de personas con lesiones traumatológicas, dolor y limitaciones de movilidad. El trabajo se orienta a recuperar movimiento, fuerza y capacidad para las actividades cotidianas.</p><p><a href="/areas-de-rehabilitacion/musculoesqueletica/">Rehabilitación musculoesquelética</a> · <a href="/areas-de-rehabilitacion/traumatologica-postoperatoria/">Rehabilitación traumatológica y postoperatoria</a></p></section>
+<section id="geriatria"><h2>Geriatría y recuperación funcional</h2><p>Experiencia en rehabilitación de personas mayores, con foco en movilidad, fuerza, equilibrio, marcha y mantención de la autonomía. Incluye el abordaje de necesidades funcionales en contextos hospitalarios y de rehabilitación.</p><p><a href="/areas-de-rehabilitacion/geriatrica/">Rehabilitación geriátrica</a> · <a href="/areas-de-rehabilitacion/funcional/">Rehabilitación funcional</a></p></section>
+<section id="institucional"><h2>Atención institucional y domiciliaria</h2><p>Experiencia vinculada a la atención de personas mayores en contextos institucionales, como ELEAM, y al trabajo de rehabilitación en el entorno habitual de las personas.</p></section>
+<section class="evalkine-detail"><h2>Gestión clínica y desarrollo tecnológico</h2><p>Actualmente soy fundador y Director Clínico de StimKine Movimiento y Salud SpA. Desde la experiencia asistencial y de gestión desarrollé EvalKine, una plataforma que integra herramientas para organizar la evaluación, el registro, el seguimiento y la gestión de la práctica kinesiológica.</p><p><a href="/evalkine/">Conocer EvalKine →</a></p></section>
 {CTA}</div>''')
 
 # AREAS
