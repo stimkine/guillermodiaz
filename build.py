@@ -6,7 +6,7 @@ EMAIL="stimkine@gmail.com"
 OUT="docs"
 os.makedirs(OUT+"/articulos",exist_ok=True)
 
-NAV=[("/","Inicio"),("/sobre-mi/","Sobre mí"),("/experiencia-profesional/","Experiencia"),("/areas-de-rehabilitacion/","Áreas"),("/atencion-en-consulta-y-domicilio/","Consulta y domicilio"),("/mi-enfoque-clinico/","Enfoque clínico"),("/evalkine/","EvalKine"),("/articulos/","Artículos"),("/contacto/","Contacto")]
+NAV=[("/","Inicio"),("/sobre-mi/","Sobre mí"),("/experiencia-profesional/","Experiencia"),("/areas-de-rehabilitacion/","Áreas"),("/atencion-en-consulta-y-domicilio/","Consulta y domicilio"),("/mi-enfoque-clinico/","Enfoque clínico"),("/evalkine/","EvalKine"),("https://stimkine.github.io/","StimKine"),("https://stimkine.github.io/eleam.html","StimKine ELEAM"),("/articulos/","Artículos"),("/contacto/","Contacto")]
 
 def fix(h):
     return h.replace('href="/','href="'+PREFIX+'/').replace('src="/','src="'+PREFIX+'/')
