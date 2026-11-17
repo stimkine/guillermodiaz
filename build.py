@@ -6,7 +6,7 @@ EMAIL="stimkine@gmail.com"
 OUT="docs"
 os.makedirs(OUT+"/articulos",exist_ok=True)
 
-NAV=[("/","Inicio"),("/sobre-mi/","Sobre mí"),("/experiencia-profesional/","Experiencia"),("/areas-de-rehabilitacion/","Áreas"),("/atencion-en-consulta-y-domicilio/","Consulta y domicilio"),("/mi-enfoque-clinico/","Enfoque clínico"),("/articulos/","Artículos"),("/contacto/","Contacto")]
+NAV=[("/","Inicio"),("/sobre-mi/","Sobre mí"),("/experiencia-profesional/","Experiencia"),("/areas-de-rehabilitacion/","Áreas"),("/atencion-en-consulta-y-domicilio/","Consulta y domicilio"),("/mi-enfoque-clinico/","Enfoque clínico"),("/evalkine/","EvalKine"),("/articulos/","Artículos"),("/contacto/","Contacto")]
 
 def fix(h):
     return h.replace('href="/','href="'+PREFIX+'/').replace('src="/','src="'+PREFIX+'/')
@@ -66,7 +66,7 @@ f'''<section class="hero wrap"><div>
 <article class="work-card"><span class="work-number">03</span><h3>Intervención y seguimiento</h3><p>Registro la evolución, reviso la respuesta al tratamiento y ajusto el plan cuando corresponde.</p></article>
 <article class="work-card"><span class="work-number">04</span><h3>Evaluación de resultados</h3><p>Utilizo registros e informes para documentar avances y apoyar la continuidad de la atención.</p></article>
 </div>
-<div class="evalkine-feature"><div><p class="eyebrow">DESARROLLO PROPIO</p><h3>EvalKine: tecnología aplicada a la rehabilitación</h3><p>Desarrollé EvalKine, una plataforma que utilizo para apoyar la evaluación kinésica, registrar la evolución de los pacientes, realizar seguimiento y generar informes clínicos. Su propósito es organizar la información y facilitar la revisión del proceso terapéutico.</p><a class="text-link" href="/mi-enfoque-clinico/">Conocer mi metodología y EvalKine →</a></div><div class="evalkine-mark" aria-hidden="true"><span>EK</span><small>EvalKine</small></div></div>
+<div class="evalkine-feature"><div><p class="eyebrow">DESARROLLO PROPIO</p><h3>EvalKine: tecnología aplicada a la rehabilitación</h3><p>Desarrollé EvalKine, una plataforma que utilizo para apoyar la evaluación kinésica, registrar la evolución de los pacientes, realizar seguimiento y generar informes clínicos. Su propósito es organizar la información y facilitar la revisión del proceso terapéutico.</p><a class="text-link" href="/evalkine/">Conocer EvalKine →</a></div><div class="evalkine-mark" aria-hidden="true"><span>EK</span><small>EvalKine</small></div></div>
 </div></section>
 
 <section class="wrap two"><div><h2>Experiencia clínica diversa</h2>
@@ -152,6 +152,38 @@ page("/mi-enfoque-clinico/","Mi enfoque clínico | Guillermo Díaz, Kinesiólogo
 </div>
 <p>EvalKine forma parte de mi interés por integrar tecnología, organización de información y criterio clínico. Es una herramienta de apoyo al trabajo profesional: las decisiones de evaluación y tratamiento continúan dependiendo del análisis del kinesiólogo y de las necesidades de cada paciente.</p></section>'''+CTA+"</div>")
 
+
+# EVALKINE — PÁGINA PROPIA
+page("/evalkine/","EvalKine | Tecnología aplicada a la kinesiología | Guillermo Díaz",
+"EvalKine es una plataforma de desarrollo propio de Guillermo Díaz Viveros que integra gestión clínica, operativa, administrativa y análisis para la práctica kinesiológica.",
+'''<article class="wrap prose evalkine-page">
+<section class="evalkine-hero">
+<p class="eyebrow">DESARROLLO TECNOLÓGICO PROPIO</p>
+<h1>EvalKine</h1>
+<p class="lead">Tecnología desarrollada desde la experiencia clínica para organizar y apoyar el trabajo kinesiológico.</p>
+<p>EvalKine es una plataforma funcional que desarrollé a partir de necesidades reales de la práctica asistencial. Integra herramientas para la evaluación, el registro y seguimiento de pacientes, junto con funciones de organización clínica, gestión administrativa y análisis de información.</p>
+<div class="evalkine-tags"><span>Experiencia clínica</span><span>Gestión de procesos</span><span>Desarrollo tecnológico</span></div>
+</section>
+<section class="evalkine-screenshot" aria-label="Vista de la plataforma EvalKine">
+<div class="screenshot-placeholder"><div class="placeholder-icon">EK</div><strong>Vista de EvalKine</strong><p>La captura real de la plataforma se incorporará en esta sección una vez preparada y anonimizada. No se utiliza una maqueta ni una imagen genérica en su reemplazo.</p></div>
+</section>
+<section><h2>Una plataforma nacida de la práctica kinesiológica</h2>
+<p>El desarrollo de EvalKine surge de observar cómo se organiza la atención, qué información necesita registrar el profesional y cómo dar continuidad al proceso terapéutico. La intención es reunir en un mismo entorno herramientas que habitualmente se encuentran dispersas entre agendas, fichas, documentos y planillas.</p>
+<p>Su desarrollo conecta tres dimensiones de mi trabajo: la experiencia clínica, la gestión de los procesos de atención y la creación de soluciones tecnológicas aplicadas a la salud.</p></section>
+<section><h2>Qué integra EvalKine</h2>
+<div class="evalkine-modules">
+<div class="evalkine-module"><span>01</span><h3>Gestión clínica y atención</h3><p>Herramientas para organizar la información de las personas atendidas y documentar el proceso de rehabilitación.</p><ul><li>Pacientes</li><li>Sesiones</li><li>Tests clínicos</li><li>Protocolos</li><li>Programas</li><li>Documentos e informes</li></ul></div>
+<div class="evalkine-module"><span>02</span><h3>Agenda y coordinación</h3><p>Funciones para planificar la atención y coordinar el trabajo de profesionales y equipos.</p><ul><li>Citas</li><li>Agenda del equipo</li><li>Usuarios StimKine</li><li>Reuniones</li><li>Tareas</li><li>Centros ELEAM</li></ul></div>
+<div class="evalkine-module"><span>03</span><h3>Administración y gestión</h3><p>Herramientas para apoyar procesos administrativos asociados a la práctica.</p><ul><li>Finanzas</li><li>Fonasa MLE</li><li>Configuración</li><li>Equipo</li></ul></div>
+<div class="evalkine-module"><span>04</span><h3>Análisis e información</h3><p>Un panel de inicio y herramientas para consultar información y observar indicadores de la actividad.</p><ul><li>Dashboard</li><li>Estadísticas y gráficos</li><li>Informes</li></ul></div>
+<div class="evalkine-module"><span>05</span><h3>Investigación y apoyo operativo</h3><p>Funciones complementarias para apoyar el trabajo y la organización del equipo.</p><ul><li>Investigación</li><li>Asistente administrativo</li></ul></div>
+</div></section>
+<section><h2>De la evaluación al seguimiento</h2>
+<div class="evalkine-flow"><div><b>Evaluar</b><p>Organizar antecedentes y resultados clínicos.</p></div><div><b>Registrar</b><p>Documentar sesiones y evolución.</p></div><div><b>Dar seguimiento</b><p>Consultar información y revisar cambios.</p></div><div><b>Informar</b><p>Generar informes y apoyar la continuidad de la atención.</p></div></div></section>
+<section class="evalkine-note"><h2>Tecnología como apoyo al criterio clínico</h2><p>EvalKine es una herramienta de apoyo a la organización y documentación del trabajo profesional. No reemplaza la evaluación, el razonamiento clínico ni las decisiones del kinesiólogo. Su propósito es facilitar el acceso a la información y la continuidad del proceso de atención.</p></section>
+<section><h2>Quién está detrás de EvalKine</h2><p>Soy Guillermo Díaz Viveros, kinesiólogo y Licenciado en Kinesiología, fundador y Director Clínico de StimKine Movimiento y Salud SpA. Desarrollé EvalKine desde mi experiencia en distintos contextos clínicos y desde la necesidad de contar con herramientas adaptadas a la realidad del trabajo kinesiológico.</p><p><a href="/sobre-mi/">Conocer mi trayectoria</a> · <a href="/mi-enfoque-clinico/">Conocer mi enfoque clínico</a> · <a href="https://stimkine.github.io/">StimKine Movimiento y Salud</a></p></section>
+'''+CTA+"</article>")
+
 # ARTICULOS
 arts=[
 ("que-hacer-frente-al-dolor-lumbar","¿Qué hacer frente al dolor lumbar?",
@@ -210,6 +242,6 @@ f'''<div class="wrap prose"><h1>Contacto</h1>
 </div>''')
 
 open(OUT+"/404.html","w",encoding="utf-8").write(fix('<!doctype html><html lang="es-CL"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Página no encontrada</title><link rel="stylesheet" href="/css/style.css"><div class="wrap prose"><h1>Página no encontrada</h1><p><a href="/">Volver al inicio</a></p></div></html>'))
-urls=["/","/sobre-mi/","/experiencia-profesional/","/areas-de-rehabilitacion/","/atencion-en-consulta-y-domicilio/","/mi-enfoque-clinico/","/articulos/","/contacto/"]+[f"/articulos/{s}/" for s,*_ in arts]
+urls=["/","/sobre-mi/","/experiencia-profesional/","/areas-de-rehabilitacion/","/atencion-en-consulta-y-domicilio/","/mi-enfoque-clinico/","/evalkine/","/articulos/","/contacto/"]+[f"/articulos/{s}/" for s,*_ in arts]
 open(OUT+"/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"\n".join(f"<url><loc>{BASE}{u}</loc></url>" for u in urls)+"\n</urlset>\n")
 open(OUT+"/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
